@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>32 - Basic Canvas</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid black;"></canvas>
+  <script>
+    const ctx = document.getElementById("myCanvas").getContext("2d");
+    ctx.fillStyle = "skyblue";
+    ctx.fillRect(20, 20, 150, 60);
+  </script>
+</body>
+</html>
