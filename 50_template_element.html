@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>50 - Template Element</title>
+</head>
+<body>
+  <template id="rowTemplate">
+    <p>This content is defined but not rendered until cloned via JavaScript.</p>
+  </template>
+
+  <div id="output"></div>
+
+  <script>
+    const template = document.getElementById("rowTemplate");
+    const clone = template.content.cloneNode(true);
+    document.getElementById("output").appendChild(clone);
+  </script>
+</body>
+</html>
