@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>59 - Input Pattern Validation</title>
+</head>
+<body>
+  <form>
+    <label for="phone">Phone (10 digits):</label>
+    <input type="tel" id="phone" pattern="[0-9]{10}" title="Enter a 10-digit phone number" required><br><br>
+
+    <label for="pincode">Pincode (6 digits):</label>
+    <input type="text" id="pincode" pattern="\d{6}" title="Enter a 6-digit pincode" required><br><br>
+
+    <input type="submit" value="Validate">
+  </form>
+</body>
+</html>
